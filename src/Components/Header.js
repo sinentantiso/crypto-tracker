@@ -1,4 +1,4 @@
-import { AppBar, Container, Select, ThemeProvider, Toolbar, Typography, createTheme, makeStyles } from '@mui/material';
+import { AppBar, Container, MenuItem, Select, ThemeProvider, Toolbar, Typography, createTheme, makeStyles } from '@mui/material';
 import {useHistory} from "react-router-dom";
 import {CryptoState} from "../CryptoContext";
 
@@ -49,7 +49,8 @@ function Header() {
                             style={{ width: 100, height: 40, marginLeft: 15 }}
                             onChange={(e) => setCurrency(e.target.value)}
                         >
-                           
+                            <MenuItem value={"USD"}>USD</MenuItem>
+                            <MenuItem value={"ZAR"}>ZAR</MenuItem>
                         </Select>
                     </Toolbar>
                 </Container>
