@@ -1,4 +1,4 @@
-import { createTheme, makeStyles } from '@mui/material';
+import { ThemeProvider, createTheme, makeStyles } from '@mui/material';
 import {useHistory} from "react-router-dom";
 
 import React from 'react';
@@ -29,9 +29,9 @@ function Header() {
     const history = useHistory();
 
     return (
-        <div>
-            Hello Sine
-        </div>
+        <ThemeProvider theme={darkTheme}>
+
+        </ThemeProvider>
     );
 }
 
