@@ -1,4 +1,6 @@
 import { createTheme, makeStyles } from '@mui/material';
+import {useHistory} from "react-router-dom";
+
 import React from 'react';
 
 const useStyles = makeStyles ((theme) => ({
@@ -21,6 +23,11 @@ const darkTheme = createTheme ({
 });
 
 function Header() {
+    const classes = useStyles();
+    const {currency, useCurrency} = CryptoState();
+
+    const history = useHistory();
+
     return (
         <div>
             Hello Sine
