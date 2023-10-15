@@ -1,5 +1,6 @@
 import { AppBar, Container, Select, ThemeProvider, Toolbar, Typography, createTheme, makeStyles } from '@mui/material';
 import {useHistory} from "react-router-dom";
+import {CryptoState} from "../CryptoContext";
 
 import React from 'react';
 
@@ -24,7 +25,7 @@ const darkTheme = createTheme ({
 
 function Header() {
     const classes = useStyles();
-    
+    const {currency, setCurrency} = CryptoState();
 
     const history = useHistory();
 
@@ -33,11 +34,22 @@ function Header() {
             <AppBar color='transparent' position='static'>
                 <Container>
                     <Toolbar>
-                        <Typography>
+                        <Typography 
+                        onClick={()=> history.push('/')}
+                        variant='h6'
+                        className={classes.title}
+                        >
                             Crypto Tracker
                         </Typography>
-                        <Select>
-
+                        <Select
+                            variant="outlined"
+                            labelId="demo-simple-select-label"
+                            id="demo-simple-select"
+                            value={currency}
+                            style={{ width: 100, height: 40, marginLeft: 15 }}
+                            onChange={(e) => setCurrency(e.target.value)}
+                        >
+                           
                         </Select>
                     </Toolbar>
                 </Container>
