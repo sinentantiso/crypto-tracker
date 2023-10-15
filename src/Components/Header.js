@@ -24,7 +24,7 @@ const darkTheme = createTheme ({
 
 function Header() {
     const classes = useStyles();
-    const {currency, useCurrency} = CryptoState();
+    
 
     const history = useHistory();
 
