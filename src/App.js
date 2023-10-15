@@ -6,7 +6,7 @@ import HomePage from './Pages/HomePage';
 import CoinPage from './Pages/CoinPage';
 import { makeStyles } from '@mui/material';
 
-const useStyles = makeStyles (() -> ({
+const useStyles = makeStyles (() => ({
   App: {
     backgroundColor: "#14161a",
     color: "white",
