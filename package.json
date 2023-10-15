@@ -39,6 +39,7 @@
     ]
   },
   "devDependencies": {
-    "source-map-loader": "^4.0.1"
+    "source-map-loader": "^4.0.1",
+    "webpack": "^4.29.6"
   }
 }
