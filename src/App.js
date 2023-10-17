@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom.min';
 import Header from './Components/Header';
 import { Route } from 'react-router-dom/cjs/react-router-dom';
+import HomePage from './Pages/HomePage';
 
 
 function App () {
@@ -10,7 +11,7 @@ function App () {
     <BrowserRouter>
       <div>
         <Header/>
-        <Route />
+        <Route path="/" component ={HomePage}/>
       </div>
     </BrowserRouter>
   )
