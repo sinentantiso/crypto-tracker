@@ -12,6 +12,7 @@ function App () {
       <div>
         <Header/>
         <Route path="/" component ={HomePage}/>
+        <Route path="/coins:id" component ={HomePage}/>
       </div>
     </BrowserRouter>
   )
