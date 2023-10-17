@@ -12,7 +12,7 @@ function App () {
     <BrowserRouter>
       <div>
         <Header/>
-        
+        <Route path="/" component ={HomePage} exact/>
         <Route path="/coins:id" component ={CoinPage}/>
       </div>
     </BrowserRouter>
