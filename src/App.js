@@ -12,8 +12,8 @@ function App () {
     <BrowserRouter>
       <div>
         <Header/>
-        <Route path="/" component ={HomePage} exact/>
-        <Route path="/coins:id" component ={CoinPage}/>
+        <Route exact path="/" component ={HomePage} />
+        <Route path="/coin" component ={CoinPage}/>
       </div>
     </BrowserRouter>
   )
