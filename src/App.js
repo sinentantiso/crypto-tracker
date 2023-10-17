@@ -5,16 +5,16 @@ import Header from './Components/Header';
 import { Route } from 'react-router-dom/cjs/react-router-dom';
 import HomePage from './Pages/HomePage';
 import CoinPage from './Pages/CoinPage';
-import { makeStyles } from '@mui/material';
+import { makeStyles } from '@mui/styles';
 
 
 function App () {
 
-  const useStyles = makeStyles (() => {
+  const useStyles = makeStyles (() => ({
     App: {
-
+      backgroundColor: "#14161a"
     }
-  });
+  }));
 
   const classes = useStyles();
 
