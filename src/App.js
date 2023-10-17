@@ -12,14 +12,15 @@ function App () {
 
   const useStyles = makeStyles (() => {
     App: {
-      
+
     }
   });
 
+  const classes = useStyles();
 
   return (
     <BrowserRouter>
-      <div>
+      <div className={classes.App}>
         <Header/>
         <Route exact path="/" component ={HomePage} />
         <Route path="/coin" component ={CoinPage}/>
